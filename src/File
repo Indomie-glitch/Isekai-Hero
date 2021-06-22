@@ -1,0 +1,29 @@
+The thinking process
+I am creating a game.
+First things that I will need to create.
+-Game initiation
+-Location display in the gameplay
+-location move in the gameplay
+-quiting the game
+
+
+_________________________________________________________________________
+Game Initiation
+When I start the game it says
+"Welcome to the dungeon explorer" ✔
+"Press enter to start" ✔
+"Enters the characters name" ☐
+"Store the characters name" ☐
+_________________________________________________________________________
+Location
+The locations in the game are stored ☐
+Must be store in this format ( location id | location name | location description) ☐
+_________________________________________________________________________
+Move
+_________________________________________________________________________
+The map
+
+_________________________________________________________________________
+
+
+
