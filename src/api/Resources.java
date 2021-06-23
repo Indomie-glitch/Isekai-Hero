@@ -1,4 +1,6 @@
-package Gameinitiation;
+package api;
+
+import characters.Characters;
 
 import java.util.ArrayList;
 import java.util.Collection;

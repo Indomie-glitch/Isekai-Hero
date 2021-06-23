@@ -1,4 +1,6 @@
-package Gameinitiation;
+package game;
+
+import characters.Characters;
 
 import java.util.Scanner;
 
