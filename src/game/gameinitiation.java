@@ -1,6 +1,6 @@
 package game;
 
-import characters.Characters;
+import character.Character;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class gameinitiation {
         if (start.equals("")) {
             //Start game
             System.out.println("Start game");
-            Characters.start();
+            Character.start();
         }
             else{
                 System.out.println("Ending game");

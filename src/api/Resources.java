@@ -1,6 +1,6 @@
 package api;
 
-import characters.Characters;
+import character.Characters;
 
 import java.util.ArrayList;
 import java.util.Collection;
