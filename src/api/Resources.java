@@ -1,6 +1,6 @@
 package api;
 
-import characters.Characters;
+import character.Character;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,13 +19,12 @@ public class Resources {
 
 
     //Characters
-    Collection<Characters> characters = new ArrayList<>();
+    Collection<Character> character = new ArrayList<Character>();
+public Collection<Character> getCharacter() {
+    return character;
+}
+public void addCharacter(List<Character> character) {
+    this.character.addAll(character);
+}
 
-    public Collection<Characters> getCharacters(){
-        return characters;
-    }
-    public void addCharacter(List<Characters> characters)
-    {
-        this.characters.addAll(characters);
-    }
 }
