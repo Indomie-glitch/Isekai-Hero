@@ -1,37 +1,24 @@
 package character;
 
-import api.Resources;
-
-import javax.xml.stream.events.Characters;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Character {
 
-        public static void start() {
-            List<Character> character = new ArrayList<Character>();
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter your Characters Name");
-            String name = scanner.nextLine();
-            System.out.println("Enter the race of your character \nThe options are \nElf \nHuman \nDwarf \nHobbit \nWizard");
-            String race = scanner.nextLine();
-            Character characters = new Character(name, race);
-            characters.add(character);
-            Resources.getInstance().addCharacter(character);
-            System.out.println(characters);
-        }
-
-        private void add(List<Characters> character) {
-        }
+        private  String name;
+        private  String race;
+        private  int level;
+        private  int xp;
+        private  String weapon;
+        private  int health;
+        private  int attack;
 
 
-        private final String name;
-        private final String race;
-
-        public Characters(String name, String race) {
+        public Character(String name, String race, int level, int xp, String weapon, int health, int attack) {
             this.name = name;
             this.race = race;
+            this.level = level;
+            this.xp = xp;
+            this.weapon = weapon;
+            this.health = health;
+            this.attack = attack;
         }
 
         public String getName() {
@@ -42,11 +29,32 @@ public class Character {
             return race;
         }
 
+        public int getLevel() {
+            return level;
+        }
+        public int getxp() {
+            return xp;
+        }
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
         @Override
         public String toString() {
-            return "Name:" + name + "\nRace:" + race;
+            return "Name:" + name + "\nRace:" + race + "\nLevel:" + level + "\nXP:" + xp + "\nWeapons:" + weapon + "\nHealth:" + health + "\nAttacl:" + attack;
         }
+
     }
 
 
-}
+
+
+
