@@ -19,8 +19,8 @@ public class Character {
             this.weapon = weapon;
             this.health = health;
             this.attack = attack;
-        }
 
+        }
         public String getName() {
             return name;
         }
@@ -49,7 +49,7 @@ public class Character {
 
         @Override
         public String toString() {
-            return "Name:" + name + "\nRace:" + race + "\nLevel:" + level + "\nXP:" + xp + "\nWeapons:" + weapon + "\nHealth:" + health + "\nAttacl:" + attack;
+            return "Name:" + name + "\nRace:" + race + "\nLevel:" + level + "\nXP:" + xp + "\nWeapons:" + weapon + "\nHealth:" + health + "\nAttack:" + attack;
         }
 
     }
