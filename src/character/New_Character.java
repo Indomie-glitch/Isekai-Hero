@@ -53,7 +53,9 @@ public class New_Character {
                 Character newcharacter = new Character(name, race, level, xp, weapon, health, attack);
                 character.add(newcharacter);
                 Resources.getInstance().addCharacter(character);
+                System.out.println("____________________________________________________");
                 System.out.println(newcharacter);
+                System.out.println("____________________________________________________");
                 Game_Start.start();
                 keepRunning = false;
                /* int selection = Integer.parseInt(scanner.next());
