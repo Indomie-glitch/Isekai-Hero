@@ -2,13 +2,13 @@ package character;
 
 public class Character {
 
-        private  String name;
-        private  String race;
-        private  int level;
-        private  int xp;
-        private  String weapon;
-        private  int health;
-        private  int attack;
+        private final String name;
+        private final String race;
+        private final int level;
+        private final int xp;
+        private final String weapon;
+        private final int health;
+        private final int attack;
 
 
         public Character(String name, String race, int level, int xp, String weapon, int health, int attack) {
@@ -32,7 +32,7 @@ public class Character {
         public int getLevel() {
             return level;
         }
-        public int getxp() {
+        public int getXp() {
             return xp;
         }
     public String getWeapon() {
