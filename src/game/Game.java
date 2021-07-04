@@ -1,6 +1,6 @@
 package game;
 
-import api.Resources;
+import api.Resource;
 import character.Character;
 
 import java.io.BufferedReader;
@@ -11,10 +11,10 @@ import java.util.Collection;
 import java.util.Scanner;
 
 
-public class Game_Start {
+public class Game {
     public static void start() {
         //Character
-        Collection<Character> character = Resources.getInstance().getCharacter();
+        Collection<Character> character = Resource.getInstance().getCharacter();
         for (Character hero : character) {
             System.out.println("\n" + "Welcome " + hero.getName() + "  ");
         }
@@ -37,46 +37,46 @@ public class Game_Start {
         if (move.equals("")) {
 
             int a = 2;
-            String linee;
+            String enterLoria;
             try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Aarnav.Vishal\\IdeaProjects\\Isekai Hero\\src\\location\\Location"))) {
                 for (int i = 0; i < a; i++)
                     br.readLine();
-                linee = br.readLine();
-                System.out.println("You are at " + linee);
+                enterLoria = br.readLine();
+                System.out.println("You are at " + enterLoria);
             } catch (IOException e) {
                 System.out.println(e);
             }
 
         }
-        Scanner monitor = new Scanner(System.in);
+        Scanner enterLoria = new Scanner(System.in);
         System.out.println("If you want to level up you must exit Loria and fight some monsters");
         System.out.println("If you want to exit Loria Type Exit loria");
-        String banana = monitor.nextLine();
+        String banana = enterLoria.nextLine();
         if (banana.equalsIgnoreCase("exit loria")) {
 
         }
         int c = 1;
-        String lineee;
+        String exitLoria;
         try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Aarnav.Vishal\\IdeaProjects\\Isekai Hero\\src\\location\\Location"))) {
             for (int i = 0; i < c; i++)
                 br.readLine();
-            lineee = br.readLine();
-            System.out.println("You are at " + lineee);
+            exitLoria = br.readLine();
+            System.out.println("You are at " + exitLoria);
         } catch (IOException e) {
             System.out.println(e);
         }
-        Scanner good = new Scanner(System.in);
+        Scanner exit = new Scanner(System.in);
         System.out.println("Type enter Plains ");
-        String bad = good.nextLine();
+        String bad = exit.nextLine();
         if (bad.equalsIgnoreCase("enter plains")) {
 
             int b = 17;
-            String lineeee;
+            String enterPlains;
             try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Aarnav.Vishal\\IdeaProjects\\Isekai Hero\\src\\location\\Location"))){
                 for (int i =0; i< b; i++)
                     br.readLine();
-                lineeee = br.readLine();
-                System.out.println("You are at " + lineeee);
+                enterPlains = br.readLine();
+                System.out.println("You are at " + enterPlains);
             }
             catch(IOException e){
                 System.out.println(e);

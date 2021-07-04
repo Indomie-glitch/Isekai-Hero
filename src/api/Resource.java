@@ -1,0 +1,39 @@
+package api;
+
+import character.Character;
+import location.Location;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class Resource {
+
+
+    private static Resource resource = null;
+    private Resource() {}
+    public static Resource getInstance() {
+        if (null == resource) {
+            resource = new Resource();
+        }
+        return resource;
+    }
+
+
+
+    //Characters
+    Collection<Character> character = new ArrayList<Character>();
+public Collection<Character> getCharacter() {
+    return character;
+}
+public void addCharacter(List<Character> character) {
+    this.character.addAll(character);
+}
+
+//Location
+    Collection<Location> location = new ArrayList<Location>();
+    public Collection<Location> getLocation(){return location;}
+    public void addLocation(List<Location> location)
+    {this.location.addAll(location);}
+
+}
