@@ -1,5 +1,6 @@
 package api;
 
+import Move.Move;
 import character.Character;
 import location.Location;
 
@@ -35,5 +36,13 @@ public void addCharacter(List<Character> character) {
     public Collection<Location> getLocation(){return location;}
     public void addLocation(List<Location> location)
     {this.location.addAll(location);}
+
+
+
+    //moves
+    Collection<Move> move = new ArrayList<Move>();
+    public Collection<Move> getMove(){return move;}
+    public void addMove(List<Move> move)
+    {this.move.addAll(move);}
 
 }

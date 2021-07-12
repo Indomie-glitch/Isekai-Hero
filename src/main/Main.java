@@ -2,6 +2,7 @@ package main;
 
 import character.CharacterService;
 import location.LocationLoader;
+import location.LocationResource;
 
 import java.util.Scanner;
 
@@ -16,8 +17,10 @@ public class Main {
             System.out.println("Start game");
             CharacterService.createCharacter();
             LocationLoader.load();
+
+
         }
-            else{
+        else{
                 System.out.println("Ending game");
             }
         }
