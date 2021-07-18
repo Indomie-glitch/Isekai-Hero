@@ -1,9 +1,12 @@
-package game;
+package main;
 
-import character.New_Character;
+import character.CharacterService;
+import location.LocationLoader;
+import location.LocationResource;
+
 import java.util.Scanner;
 
-public class gameinitiation {
+public class Main {
     public static void main(String[] args) {
         Scanner enter = new Scanner(System.in);
         System.out.println("Welcome to Dungeon Explorer!!");
@@ -12,9 +15,12 @@ public class gameinitiation {
         if (start.equals("")) {
             //Start game
             System.out.println("Start game");
-            New_Character.start();
+            CharacterService.createCharacter();
+            LocationLoader.load();
+
+
         }
-            else{
+        else{
                 System.out.println("Ending game");
             }
         }
