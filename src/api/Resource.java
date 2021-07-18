@@ -23,12 +23,12 @@ public class Resource {
 
 
     //Characters
-    Collection<Character> character = new ArrayList<Character>();
-public Collection<Character> getCharacter() {
+    Character character = new ArrayList<Character>();
+public Character getCharacter() {
     return character;
 }
 public void addCharacter(List<Character> character) {
-    this.character.addAll(character);
+    this.character.add(character);
 }
 
 //Location

@@ -1,7 +1,6 @@
 package Move;
 
 
-import location.LocationLoader;
 import java.util.List;
 
 public class MoveResource {
@@ -17,11 +16,11 @@ public class MoveResource {
     }
 
     private MoveResource() {
-        moves = (List) LocationLoader.load();
+        moves = (List) MoveLoader.load();
     }
 
     public Move getmoveById(int Id) {
-        for(Move move : moves) {
+        for (Move move : moves) {
             if (move.getId() == Id)
                 return move;
         }
@@ -31,4 +30,15 @@ public class MoveResource {
     public List<Move> getAll() {
         return moves;
     }
+
+    public Move[] getMoveByLocationId(int id) {
+        for(Move move :moves){
+            if (move.getId() == id)
+
+                return new Move[0];
+        }
+        return new Move[0];
+    }
 }
+
+

@@ -11,6 +11,7 @@ public class Move {
     private  String d;
 
     public Move(){
+        this.id = id;
         this.w = w;
         this.s = s;
         this.a = a;

@@ -2,57 +2,105 @@ package character;
 
 public class Character {
 
-        private final String name;
-        private final String race;
-        private final int level;
-        private final int xp;
-        private final String weapon;
-        private final int health;
-        private final int attack;
+        private int maxhp;
+        private int currenthp;
+        private int maxmp;
+        private int currentmp;
+        private int strength;
+        private int defence;
+        private int agility;
+        private int dexterity;
+        private int magic;
 
-
-        public Character(String name, String race, int level, int xp, String weapon, int health, int attack) {
-            this.name = name;
-            this.race = race;
-            this.level = level;
-            this.xp = xp;
-            this.weapon = weapon;
-            this.health = health;
-            this.attack = attack;
-
-        }
-        public String getName() {
-            return name;
-        }
-
-        public String getRace() {
-            return race;
-        }
-
-        public int getLevel() {
-            return level;
-        }
-        public int getXp() {
-            return xp;
-        }
-    public String getWeapon() {
-        return weapon;
+    public Character(int strength, int defense, int maxhp, int currenthp, int maxmp, int currentmp) {
+        this.maxhp = maxhp;
+        this.currenthp = currenthp;
+        this.maxmp = maxmp;
+        this.currentmp = currentmp;
+        this.strength = strength;
+        this.defence = defense;
+        this.agility = agility;
+        this.dexterity = dexterity;
+        this.magic = magic;
     }
 
-    public int getHealth() {
-        return health;
+    public int getMaxhp() {
+        return maxhp;
     }
 
-    public int getAttack() {
-        return attack;
+    public void setmaxhp(int maxhp) {
+        this.maxhp = maxhp;
     }
 
-        @Override
-        public String toString() {
-            return "Name:" + name + "\nRace:" + race + "\nLevel:" + level + "\nXP:" + xp + "\nWeapons:" + weapon + "\nHealth:" + health + "\nAttack:" + attack;
-        }
-
+    public int getCurrenthp() {
+        return currenthp;
     }
+
+    public void setCurrenthp(int currenthp) {
+        this.currenthp = currenthp;
+    }
+
+    public int getMaxmp() {
+        return maxmp;
+    }
+
+    public void setMaxmp(int maxmp) {
+        this.maxmp = maxmp;
+    }
+
+    public int getCurrentmp() {
+        return currentmp;
+    }
+
+    public void setCurrentmp(int currentmp) {
+        this.currentmp = currentmp;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public int getDefence() {
+        return defence;
+    }
+
+    public void setDefence(int defence) {
+        this.defence = defence;
+    }
+
+    public int getAgility() {
+        return agility;
+    }
+
+    public void setAgility(int agility) {
+        this.agility = agility;
+    }
+
+    public int getDexterity() {
+        return dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
+    }
+
+    public int getMagic() {
+        return magic;
+    }
+
+    public void setMagic(int magic) {
+        this.magic = magic;
+    }
+
+    @Override
+    public String toString() {
+        return "Max HP" + maxhp + "\nCurrent HP" + currenthp + "\nMax MP" + maxmp + "\nCurrent MP" + currentmp + "\nStrength" + strength + "\nDefence" + defence + "\nAgility" + agility + "\nDexterity" + dexterity +"\nMagic" + magic;
+    }
+}
 
 
 
