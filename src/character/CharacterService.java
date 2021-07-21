@@ -13,7 +13,7 @@ public class CharacterService {
         List<Character> character = new ArrayList<Character>();
         Scanner scanner = new Scanner(System.in);
         while (keepRunning) {
-            try {
+            //try {
 
                 System.out.println("Enter your Characters Name");
                 String name = scanner.nextLine();
@@ -28,7 +28,7 @@ public class CharacterService {
                 int agility = Integer.parseInt(scanner.next());
                 System.out.println("Magic");
                 int magic = Integer.parseInt((scanner.next()));
-                Character newcharacter = new Character(strength, defense, agility, magic, maxhp, maxmp);
+                Character newcharacter = new Character(strength, defense, agility, magic, maxhp, maxmp, name);
                 character.add(newcharacter);
                 Resource.getInstance().addCharacter(character);
                 System.out.println("____________________________________________________");
@@ -36,14 +36,14 @@ public class CharacterService {
                 System.out.println("____________________________________________________");
                 Game.start();
                 keepRunning = false;
-            }catch (Exception ex){
-                System.out.println("Must have pressed something wrong, Try again");
-                keepRunning = true;
+           // }catch (Exception ex){
+            //    System.out.println("Must have pressed something wrong, Try again");
+             //   keepRunning = true;
             }
         }
 
     }
-}
+//}
 
 
 

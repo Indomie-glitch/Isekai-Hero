@@ -1,5 +1,7 @@
 package character;
 
+import java.util.List;
+
 public class Character {
 
         private int maxhp;
@@ -11,17 +13,19 @@ public class Character {
         private int agility;
         private int dexterity;
         private int magic;
+        private String name;
 
-    public Character(int strength, int defense, int maxhp, int currenthp, int maxmp, int currentmp) {
+    public Character(int strength, int defense, int maxhp, int currenthp, int maxmp, int currentmp, String name) {
         this.maxhp = maxhp;
         this.currenthp = currenthp;
         this.maxmp = maxmp;
         this.currentmp = currentmp;
         this.strength = strength;
-        this.defence = defense;
+        this.defence = defence;
         this.agility = agility;
         this.dexterity = dexterity;
         this.magic = magic;
+        this.name = name;
     }
 
     public int getMaxhp() {
@@ -95,11 +99,19 @@ public class Character {
     public void setMagic(int magic) {
         this.magic = magic;
     }
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Override
     public String toString() {
-        return "Max HP" + maxhp + "\nCurrent HP" + currenthp + "\nMax MP" + maxmp + "\nCurrent MP" + currentmp + "\nStrength" + strength + "\nDefence" + defence + "\nAgility" + agility + "\nDexterity" + dexterity +"\nMagic" + magic;
+        return "Max HP: " + maxhp + "\nCurrent HP: " + currenthp + "\nMax MP: " + maxmp + "\nCurrent MP: " + currentmp + "\nStrength: " + strength + "\nDefence: " + defence + "\nAgility: " + agility + "\nDexterity: " + dexterity +"\nMagic: " + magic;
     }
+
 }
 
 

@@ -14,9 +14,10 @@ public class Game {
     public static void start() {
 
         //Character
-        Character character = Resource.getInstance().getCharacter();
+        Collection<Character> character = Resource.getInstance().getCharacter();
         for (Character hero : character) {
             System.out.println("\n" + "Welcome " + hero.getName() + "  ");
+            System.out.println("Welcome");
         }
         //Reading File
         boolean quit = false;
