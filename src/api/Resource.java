@@ -20,8 +20,6 @@ public class Resource {
         return resource;
     }
 
-
-
     //Characters
     Collection<Character> character = new ArrayList<Character>();
 public Collection<Character> getCharacter() {

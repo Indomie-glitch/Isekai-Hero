@@ -20,7 +20,6 @@ public class Move {
 
     public static void add(Move loader) {
     }
-
     public int getId() {
         return id;
     }

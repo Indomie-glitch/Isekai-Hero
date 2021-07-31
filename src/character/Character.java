@@ -15,6 +15,7 @@ public class Character {
         private int magic;
         private String name;
 
+
     public Character(int strength, int defense, int maxhp, int currenthp, int maxmp, int currentmp, String name) {
         this.maxhp = maxhp;
         this.currenthp = currenthp;
